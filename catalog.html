@@ -22,7 +22,7 @@
       </div>
       <div class="header-down">
         <div class="header-title">
-          <h1>Интернет-магазин строительных материалови инструментов для ремонта</h1>
+          <b>Интернет-магазин строительных материалови инструментов для ремонта</b>
         </div>
         <div class="header-contacts">
           <ul>
@@ -60,11 +60,50 @@
       <h1>Перфораторы</h1>
       <section class="filter">
         <h2>фильтр:</h2>
-        <!--Здесь будет форма-->
+        <form class="" action="index.html" method="post" oninput="">
+          <div class="filter-price">
+            <h2>Цена:</h2>
+            <label for=""></label>
+            <output name=""></output>
+            <output name=""></output>
+            <input type="range" id="" name="" min="0" max="30000" step="1">
+          </div>
+          <div class="filter-manufacturer">
+            <h2>Производители:</h2>
+              <input type="checkbox">BOSCH<br>
+              <input type="checkbox">ИНТЕРСКОЛ<br>
+              <input type="checkbox">MAKITA<br>
+              <input type="checkbox">DEWALT<br>
+              <input type="checkbox">HITACHI<br>
+              <div class="filter-power">
+                <h2>Питание:</h2>
+                  <label>
+                    <input type="radio" name="one" value="">
+                      Аккамуляторные
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="one" value="" checked>
+                    Сетевые
+                  </label>
+              </div>
+          </div>
+          <input type="button" value="Показать">
+        </form>
       </section>
       <section class="sorting">
         <h2>сортировка:</h2>
-        <!--Здесь будет форма-->
+        <form class="" action="index.html" method="post">
+          <input type="button" value="По цене">
+          <input type="button" value="По типу">
+          <input type="button" value="по функционалу">
+          <input type="image" src="#" alt="up">
+          <input type="image" src="#" alt="down">
+          <!--
+          <button> <img src="" alt="up"></button>
+          <button> <img src="" alt=""></button>
+        -->
+        </form>
       </section>
       <section class="catalog">
         <ul class="catalog-list">
@@ -223,6 +262,19 @@
           </li>
         </ul>
       </section>
+      <div class="pagination">
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">следующая</a></li>
+        </ul>
+      </div>
+      <article class="">
+        <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      </article>
     </main>
     <footer class="page-footer">
       <div class="footer-up">
