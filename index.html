@@ -8,12 +8,14 @@
   <body>
     <header class="page-header">
       <div class="header-up">
-        <a class="main-logo" href="index.html">
-          <img src="img/logo.svg" width="1" height="1" alt="Техномарт">
-        </a>
+        <div class="header-logo">
+          <a class="logo" href="index.html">
+            <img src="img/logo.svg" width="136.5" height="21.59" alt="Техномарт">
+          </a>
+        </div>
         <div class="search-item">
-          <form>
-            <input type="search" name="search" id="search" placeholder="Поиск:">
+          <form action="#" method="get">
+            <input type="search" name="search" id="search-field" placeholder="Поиск:">
           </form>
         </div>
         <a class="bookmark" href="#">Закладки: 0</a>
@@ -82,7 +84,7 @@
               <span class="catalog-item-title">BOSCH BFG 9000</span>
             </h3>
             <p class="catalog-item-image">
-              <img src="" width="1" height="1" alt="Картинка перфоратора BOSCH BFG 9000">
+              <img src="img/item-bfg_9000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 9000">
             <p class="catalog-item-price">
               <span class="old-price"><del>32500 р.</del></span>
               <span class="item-price">25500 р.</span>
@@ -98,7 +100,7 @@
               <span class="catalog-item-title">BOSCH BFG 3000</span>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-1.jpg" width="1" height="1" alt="Картинка перфоратора BOSCH BFG 3000">
+              <img src="img/item-bfg_3000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 3000">
             <p class="catalog-item-price">
               <span class="old-price"><del>22500 р.</del></span>
               <span class="item-price">15500 р.</span>
@@ -114,7 +116,7 @@
               <span class="catalog-item-title">BOSCH BFG 6000</span>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-2.jpg" width="1" height="1" alt="Картинка перфоратора BOSCH BFG 6000">
+              <img src="img/item-bfg_6000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 6000">
             <p class="catalog-item-price">
               <span class="old-price"><del>30500 р.</del></span>
               <span class="item-price">25500 р.</span>
@@ -130,7 +132,7 @@
               <span class="catalog-item-title">BOSCH BFG 2000</span>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-3.jpg" width="1" height="1" alt="Картинка перфоратора BOSCH BFG 2000">
+              <img src="img/item-bfg_2000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 2000">
             <p class="catalog-item-price">
               <span class="old-price"><del></del></span>
               <span class="item-price">12500 р.</span>
@@ -184,9 +186,9 @@
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <form class="" action="index.html" method="post">
-          <button type="button" name="button">Доставка</button>
-          <button type="button" name="button">Гарантия</button>
-          <button type="button" name="button">Кредит</button>
+          <button type="button" name="btn-services" id="btn-delivery">Доставка</button>
+          <button type="button" name="btn-services" id="btn-safeguard">Гарантия</button>
+          <button type="button" name="btn-services" id="btn-credit">Кредит</button>
         </form>
       </section>
       <section class="main-info">
@@ -203,7 +205,8 @@
       <section class="main-contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав к нам в офис:</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d999.3163726263195!2d30.3221871!3d59.938236!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!3m2!1d59.9387165!2d30.3230474!5e0!3m2!1sru!2sru!4v1557654430223!5m2!1sru!2sru" width="300" height="158"  style="border:0" allowfullscreen></iframe>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d999.3163726263195!2d30.3221871!3d59.938236!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!3m2!1d59.9387165!2d30.3230474!5e0!3m2!1sru!2sru!4v1557654430223!5m2!1sru!2sru" width="300" height="158"  style="border:0" allowfullscreen></iframe> -->
+        <a href="#"><img src="img/map.jpg" width="300" height="158" alt="карта"></a>
       </section>
       <div class="main-write_us">
         <a class="write_us-btn" href="write_us.html">Заблудились? Напишите нам!</a>
@@ -213,7 +216,7 @@
       <div class="footer-up">
         <div class="footer-contacts">
           <a href="index.html" class="page-footer-logo">
-            <img src="#" width="1" height="1" alt="Техномарт">
+            <img src="img/logo.svg" width="136.5" height="21.59" alt="Техномарт">
           </a>
           <div class="footer-contacts-item">
             <ul>
