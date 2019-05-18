@@ -74,6 +74,20 @@
           <a href="#">Бесплатно</a>
         </div>
       </div>
+      <div class="slider">
+        <div class="slide1">
+          <b>Дрели</b>
+          <p>Соседям на радость!</p>
+          <a href="catalog.html">Открыть каталог</a>
+          <img src="img/slide-1.jpg" alt="фото твоего соседа с нижнего этажа">
+        </div>
+        <div class="slide2">
+          <b>Перфораторы</b>
+          <p>Настоящие мужские игрушки</p>
+          <a href="catalog.html">Открыть каталог</a>
+          <img src="img/slide-2.jpg" alt="фото твоего соседа с соседней квартиры">
+        </div>
+      </div>
       <section class="top_product">
         <h2>Популярные товары:</h2>
         <a href="#">Все популярные товары</a>
@@ -182,14 +196,22 @@
           </li>
         </ul>
       </section>
-      <section class="services">
+      <section class="service">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <form class="" action="index.html" method="post">
-          <button type="button" name="btn-services" id="btn-delivery">Доставка</button>
-          <button type="button" name="btn-services" id="btn-safeguard">Гарантия</button>
-          <button type="button" name="btn-services" id="btn-credit">Кредит</button>
-        </form>
+        <div class="service-btn">
+          <form class="" action="index.html" method="post">
+            <label for="btn-delivery">
+              <input type="radio" name="btn-delivery" id="btn-delivery">Доставка
+            </label>
+            <label for="btn-safeguard">
+              <input type="radio" name="btn-safeguard" id="btn-safeguard">Гарантия
+            </label>
+            <label for="btn-credit">
+              <input type="radio" name="btn-credit" id="btn-credit">Кредит
+            </label>
+          </form>
+        </div>
       </section>
       <section class="main-info">
         <h2>КОМПАНИЯ «Техномарт»</h2>
