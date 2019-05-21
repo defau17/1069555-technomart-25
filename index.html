@@ -290,5 +290,41 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal-maps">
+      <h2 class="visually-hidden">Карта</h2>
+      <button class="modal-maps-close" type="button" name="button">Закрыть</button>
+      <img src="img/map-big.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+
+    </section>
+
+    <section class="modal-write_us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <button class="modal-write_us-close" type="button" name="button">Закрыть</button>
+      <form class="modal-write_us-form" action="https://echo.htmlacademy.ru" method="post">
+        <ul>
+          <li>
+            <label>
+              Ваше имя:
+              <input type="text" name="user-name" placeholder="Вася" required>
+            </label>
+          </li>
+          <li>
+            <label>
+              Ваш E-mail:
+              <input type="email" name="email" placeholder="vasya.pupkin@mail.ru" required>
+            </label>
+          </li>
+          <li>
+            <label>
+              Текст письма:
+              <textarea name="text" rows="5" cols="50" placeholder="хороший тамада и конкурсы веселые!!!1" required></textarea>
+            </label>
+          </li>
+        </ul>
+        <input type="submit" name="modal-write_us-send" value="Отправить">
+      </form>
+    </section>
+
   </body>
 </html>

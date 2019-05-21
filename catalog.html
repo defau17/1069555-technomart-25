@@ -28,8 +28,8 @@
         </div>
         <div class="header-contacts">
           <ul>
-            <li>+7 (812) 555-05-55</li>
-            <li>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
+            <li class="header-contacts-number">+7 (812) 555-05-55</li>
+            <li class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
           </ul>
         </div>
         <div class="user-block">
@@ -62,49 +62,60 @@
       <h1>Перфораторы</h1>
       <section class="filter">
         <h2>фильтр:</h2>
-        <form action="catalog.html" method="post" oninput="snake-field_put.value=snake.value">
-          <div class="filter-price">
+        <form action="https://echo.htmlacademy.ru" method="get" oninput="snake-field_put.value=snake.value">
             <fieldset>
-            <h2>Цена:</h2>
-            <input type="range" id="snake" name="snake" min="0" max="30000" step="1">
+              <legend>Цена:</legend>
+              <input type="range" id="snake" name="snake" min="0" max="30000" step="1">
               <output name="snake-field_put"></output>
             </fieldset>
-          </div>
-          <div class="filter-manufacturer">
             <fieldset>
-            <h2>Производители:</h2>
-              <label>
-                <input type="checkbox" name="bosch" id="bosch">BOSCH
-              </label><br>
-              <label>
-                <input type="checkbox" name="interskol" id="interskol">ИНТЕРСКОЛ
-              </label><br>
-              <label>
-                <input type="checkbox" name="makita" id="makita">MAKITA
-              </label><br>
-              <label>
-                <input type="checkbox" name="dewalt" id="dewalt">DEWALT
-              </label><br>
-              <label>
-                <input type="checkbox" name="hitachi" id="hitachi">HITACHI
-              </label><br>
-            </fieldset>
-              <div class="filter-power">
-                <fieldset>
-                <h2>Питание:</h2>
+              <legend>Производители:</legend>
+              <ul>
+                <li>
                   <label>
-                    <input type="radio" name="btn-power" value="a">
+                    <input type="checkbox" name="bosch" id="bosch">BOSCH
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="interskol" id="interskol">ИНТЕРСКОЛ
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="makita" id="makita">MAKITA
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="dewalt" id="dewalt">DEWALT
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="hitachi" id="hitachi">HITACHI
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input type="radio" name="btn-power" value="wireless">
                       Аккамуляторные
                   </label>
-                  <br>
+                </li>
+                <li>
                   <label>
-                    <input type="radio" name="btn-power" value="b">
+                    <input type="radio" name="btn-power" value="wired">
                     Сетевые
                   </label>
-                </fieldset>
-              </div>
-          </div>
-          <input type="button" value="Показать">
+                </li>
+              </ul>
+            </fieldset>
+          <input type="submit" value="Показать">
         </form>
       </section>
       <section class="sorting">
@@ -278,14 +289,12 @@
           </li>
         </ul>
       </section>
-      <div class="pagination">
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">следующая</a></li>
-        </ul>
-      </div>
+      <ul class="pagination">
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">следующая</a></li>
+      </ul>
       <article class="">
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
@@ -349,5 +358,12 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal-check">
+      <button class="modal-check-close" type="button" name="button">Закрыть</button>
+      <h2>Товар добавлен в корзину!</h2>
+      <a href="#">Оформить заказ</a>
+      <button class="modal-check-close-other" type="button" name="button">Продолжить покупки</button>
+    </section>
   </body>
 </html>
