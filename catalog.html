@@ -73,27 +73,27 @@
               <ul>
                 <li>
                   <label>
-                    <input type="checkbox" name="bosch" id="bosch">BOSCH
+                    <input class="visually-hidden" type="checkbox" name="bosch" id="bosch">BOSCH
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="interskol" id="interskol">ИНТЕРСКОЛ
+                    <input class="visually-hidden" type="checkbox" name="interskol" id="interskol">ИНТЕРСКОЛ
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="makita" id="makita">MAKITA
+                    <input class="visually-hidden" type="checkbox" name="makita" id="makita">MAKITA
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="dewalt" id="dewalt">DEWALT
+                    <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt">DEWALT
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="hitachi" id="hitachi">HITACHI
+                    <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi">HITACHI
                   </label>
                 </li>
               </ul>
@@ -103,13 +103,13 @@
               <ul>
                 <li>
                   <label>
-                    <input type="radio" name="btn-power" value="wireless">
+                    <input class="visually-hidden" type="radio" name="btn-power" value="wireless">
                       Аккамуляторные
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="radio" name="btn-power" value="wired">
+                    <input class="visually-hidden" type="radio" name="btn-power" value="wired">
                     Сетевые
                   </label>
                 </li>
@@ -119,40 +119,43 @@
         </form>
       </section>
       <section class="sorting">
-        <h2>сортировка:</h2>
+        <h2 class="visually-hidden">сортировка:</h2>
         <form class="" action="https://echo.htmlacademy.ru" method="get">
-          <ul>
-            <li>
-              <label>
-                <input type="radio" name="sort" value="По цене" checked>
-                По цене
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="sort" value="По типу">
-                По типу
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="sort" value="По функционалу">
-                По функционалу
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="sort2" alt="По возростанию">
-                <img src="img/icon-up-dir.svg" alt="По возростанию">
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="sort2" alt="По убыванию">
-                <img src="img/icon-down-dir.svg" alt="По убыванию">
-              </label>
-            </li>
-          </ul>
+          <fieldset>
+            <legend>сортировка:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input class="visually-hidden" type="radio" name="sort" value="По цене">
+                  По цене
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden" type="radio" name="sort" value="По типу">
+                  По типу
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden" type="radio" name="sort" value="По функционалу">
+                  По функционалу
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden" type="radio" name="sort2" alt="По возростанию">
+                  <img src="img/icon-up-dir.svg" alt="По возростанию">
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden" type="radio" name="sort2" alt="По убыванию">
+                  <img src="img/icon-down-dir.svg" alt="По убыванию">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
           <!--
           <button> <img src="" alt="up"></button>
           <button> <img src="" alt=""></button>
@@ -386,7 +389,7 @@
       </div>
     </footer>
 
-    <section class="modal-check">
+    <section class="visually-hidden" class="modal-check">
       <button class="modal-check-close" type="button" name="button">Закрыть</button>
       <h2>Товар добавлен в корзину!</h2>
       <a href="#">Оформить заказ</a>
