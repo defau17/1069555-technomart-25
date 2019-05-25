@@ -483,6 +483,10 @@ legend {
   background-color: #293449;
 }
 
+.footer-contacts-item {
+  font-style: normal;
+}
+
 .footer-feedback a:hover,
 .footer-feedback a:focus {
   border-bottom: 1px solid;
