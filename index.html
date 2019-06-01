@@ -52,60 +52,71 @@
     <main  class="index-page">
       <div class="main-top">
         <div class="main-offers">
-          <div class="offers-item">
-            <h2>Материалы</h2>
-            <a href="#">На любой вкус</a>
+          <div class="offers-wrapper1">
+            <div class="offers-item">
+              <h2>Материалы</h2>
+              <a href="#">На любой вкус</a>
+            </div>
+            <div class="offers-item">
+              <h2>Инструмент</h2>
+              <a href="#">На все случаи</a>
+            </div>
+            <div class="offers-item">
+              <h2>Техника</h2>
+              <a href="#">Для стройки</a>
+            </div>
           </div>
-          <div class="offers-item">
-            <h2>Инструмент</h2>
-            <a href="#">На все случаи</a>
-          </div>
-          <div class="offers-item">
-            <h2>Техника</h2>
-            <a href="#">Для стройки</a>
-          </div>
-          <div class="offers-item">
-            <h2>Скидка 50%</h2>
-            <a href="#">На 350 товаров</a>
-          </div>
-          <div class="offers-item">
-            <h2>Доставка</h2>
-            <a href="#">Бесплатно</a>
-          </div>
-        </div>
-        <div class="slider">
-          <ul class="slider-btn">
-            <li>
-              <label>
-                <input  class="visually-hidden" type="radio" id="slide-btn-1" name="slide-btn" checked>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input  class="visually-hidden" type="radio" id="slide-btn-2" name="slide-btn">
-              </label>
-            </li>
-          </ul>
-          <div class="slide1">
-            <b>Дрели</b>
-            <p>Соседям на радость!</p>
-            <a href="catalog.html">Открыть каталог</a>
-            <img src="img/slide-1.jpg" alt="фото твоего соседа с нижнего этажа">
-          </div>
-          <div class="slide2 visually-hidden">
-            <b>Перфораторы</b>
-            <p>Настоящие мужские игрушки</p>
-            <a href="catalog.html">Открыть каталог</a>
-            <img src="img/slide-2.jpg" alt="фото твоего соседа с соседней квартиры">
+          <div class="offers-wrapper2">
+            <div class="slider">
+              <ul class="slider-btn visually-hidden">
+                <li>
+                  <label>
+                    <input  class="visually-hidden" type="radio" id="slide-btn-1" name="slide-btn" checked>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input  class="visually-hidden" type="radio" id="slide-btn-2" name="slide-btn">
+                  </label>
+                </li>
+              </ul>
+              <div class="slide1">
+                <div class="visually-hidden">
+                  <b>Дрели</b>
+                  <p>Соседям на радость!</p>
+                  <a href="catalog.html">Открыть каталог</a>
+                </div>
+                <img src="img/slide-1.jpg" alt="фото твоего соседа с нижнего этажа">
+              </div>
+              <div class="slide2 visually-hidden">
+                <b>Перфораторы</b>
+                <p>Настоящие мужские игрушки</p>
+                <a href="catalog.html">Открыть каталог</a>
+                <img src="img/slide-2.jpg" alt="фото твоего соседа с соседней квартиры">
+              </div>
+            </div>
+            <div class="offers-wrapper3">
+              <div class="offers-item">
+                <h2>Скидка 50%</h2>
+                <a href="#">На 350 товаров</a>
+              </div>
+              <div class="offers-item">
+                <h2>Доставка</h2>
+                <a href="#">Бесплатно</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <section class="top_product">
-        <h2>Популярные товары:</h2>
-        <a href="#">Все популярные товары</a>
-        <ul>
-          <li class="catalog-item">
-            <h3>
+        <div class="top_product-title">
+          <h2>Популярные товары:</h2>
+          <a href="#">Все популярные товары</a>
+        </div>
+        <ul class="top_product-catalog">
+          <!-- 1 -->
+          <li class="catalog-item top_prod">
+            <h3 class="item-title">
               <span class="catalog-category">Перфоратор</span>
               <span class="catalog-item-title">BOSCH BFG 9000</span>
             </h3>
@@ -115,13 +126,14 @@
               <span class="old-price"><del>32500 р.</del></span>
               <span class="item-price">25500 р.</span>
             </p>
-            <p>
+            <p class="catalog-item-active">
               <a class="btn-buy" href="#">купить</a>
               <a class="btn-add_to_bookmark" href="#">в закладки</a>
             </p>
           </li>
-          <li class="catalog-item">
-            <h3>
+          <!-- 2 -->
+          <li class="catalog-item top_prod">
+            <h3 class="item-title">
               <span class="catalog-category">Перфоратор</span>
               <span class="catalog-item-title">BOSCH BFG 3000</span>
             </h3>
@@ -131,13 +143,14 @@
               <span class="old-price"><del>22500 р.</del></span>
               <span class="item-price">15500 р.</span>
             </p>
-            <p>
+            <p class="catalog-item-active">
               <a class="btn-buy" href="#">купить</a>
               <a class="btn-add_to_bookmark" href="#">в закладки</a>
             </p>
           </li>
-          <li class="catalog-item">
-            <h3>
+          <!-- 3 -->
+          <li class="catalog-item top_prod">
+            <h3 class="item-title">
               <span class="catalog-category">Перфоратор</span>
               <span class="catalog-item-title">BOSCH BFG 6000</span>
             </h3>
@@ -147,13 +160,14 @@
               <span class="old-price"><del>30500 р.</del></span>
               <span class="item-price">25500 р.</span>
             </p>
-            <p>
+            <p class="catalog-item-active">
               <a class="btn-buy" href="#">купить</a>
               <a class="btn-add_to_bookmark" href="#">в закладки</a>
             </p>
           </li>
-          <li class="catalog-item">
-            <h3>
+          <!-- 4 -->
+          <li class="catalog-item top_prod">
+            <h3 class="item-title">
               <span class="catalog-category">Перфоратор</span>
               <span class="catalog-item-title">BOSCH BFG 2000</span>
             </h3>
@@ -163,7 +177,7 @@
               <span class="old-price"><del></del></span>
               <span class="item-price">12500 р.</span>
             </p>
-            <p>
+            <p class="catalog-item-active">
               <a class="btn-buy" href="#">купить</a>
               <a class="btn-add_to_bookmark" href="#">в закладки</a>
             </p>
@@ -171,88 +185,97 @@
         </ul>
       </section>
       <section class="top_manufacturer">
-        <h2>Популярные производители:</h2>
-        <a href="#">Все производители</a>
-        <ul>
-          <li>
+        <div class="top_manufacturer-title">
+          <h2>Популярные производители:</h2>
+          <a href="#">Все производители</a>
+        </div>
+        <ul class="top_manufacturer-catalog">
+          <!-- item1 -->
+          <li class="manufacturer-catalog-item">
             <a class="" href="#">
               <img src="img/brand-bosch.png" width="126" height="37" alt="BOSCH"></a>
           </li>
-          <li>
+          <!-- item2 -->
+          <li class="manufacturer-catalog-item">
             <a class="" href="#">
               <img src="img/brand-makita.png" width="123" height="40" alt="MAKITA"></a>
           </li>
-          <li>
+          <!-- item3 -->
+          <li class="manufacturer-catalog-item">
             <a class="" href="#">
               <img src="img/brand-dewalt.png" width="146" height="44" alt="DEWALT"></a>
           </li>
-          <li>
+          <!-- item4 -->
+          <li class="manufacturer-catalog-item">
             <a class="" href="#">
               <img src="img/brand-interskol.png" width="200" height="88" alt="ИНТЕРСКОЛ"></a>
           </li>
-          <li>
+          <!-- item5 -->
+          <li class="manufacturer-catalog-item">
             <a class="" href="#">
               <img src="img/brand-hitachi.png" width="169" height="31" alt="HITACHI"></a>
           </li>
-          <li>
+          <!-- item6 -->
+          <li class="manufacturer-catalog-item">
             <a class="" href="#">
               <img src="img/brand-lg.png" width="121" height="73" alt="LG"></a>
           </li>
-          <li>
+          <!-- item7 -->
+          <li class="manufacturer-catalog-item">
             <a class="" href="#">
               <img src="img/brand-aeg.png" width="151" height="96" alt="AEG"></a>
           </li>
-          <li>
+          <!-- item8 -->
+          <li class="manufacturer-catalog-item">
             <a class="" href="#">
               <img src="img/brand-metabo.png" width="204" height="69" alt="METABO"></a>
           </li>
         </ul>
       </section>
       <section class="service">
-        <h2>Сервисы</h2>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <div class="service-btn">
-          <form class="" action="index.html" method="post">
-            <label for="btn-delivery">
-              <input class="visually-hidden" type="radio" name="btn-delivery" id="btn-delivery">Доставка
-            </label>
-            <label for="btn-safeguard">
-              <input  class="visually-hidden" type="radio" name="btn-safeguard" id="btn-safeguard">Гарантия
-            </label>
-            <label for="btn-credit">
-              <input class="visually-hidden" type="radio" name="btn-credit" id="btn-credit">Кредит
-            </label>
-          </form>
+        <div class="service-wrapper">
+          <h2>Сервисы</h2>
+          <div class="service-title-wrapper">
+            <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+            <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          </div>
+          <div class="service-active-wrapper">
+            <div class="service-btn">
+              <label for="btn-delivery">
+                <input class="service-btn visually-hidden" type="radio" name="btn-delivery" id="btn-delivery">Доставка
+              </label>
+              <label for="btn-safeguard">
+                <input  class="visually-hidden" type="radio" name="btn-safeguard" id="btn-safeguard">Гарантия
+              </label>
+              <label for="btn-credit">
+                <input class="visually-hidden" type="radio" name="btn-credit" id="btn-credit">Кредит
+              </label>
+            </div>
+            <section class="service-slide delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+              <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </section>
+            <section class="service-slide warranty visually-hidden">
+              <h3>Гарантия</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+              </p>
+            </section>
+            <section class="service-slide credit visually-hidden">
+              <h3>Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+              </p>
+            </section>
+          </div>
         </div>
-        <section class="service-delivery">
-          <h3>Доставка</h3>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-
-
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-          </p>
-        </section>
-        <section class="service-warranty">
-          <h3>Гарантия</h3>
-          <p>
-            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-          </p>
-        </section>
-        <section class="service-credit">
-          <h3>Кредит</h3>
-          <p>
-            Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-          </p>
-        </section>
       </section>
       <div class="information">
         <section class="main-info">
           <h2 class="info-title">Компания «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный     выбор     товаров для ремонта и строительства не оставит равнодушными     любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          <p class="main-info-p1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="main-info-p2">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
           <ul class="main-info-item">
             <li>Деловые линии</li>
@@ -263,7 +286,7 @@
         </section>
         <section class="main-contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав к нам в офис:</p>
+          <p>Вы можете забрать товар сами,<br>заехав к нам в офис:</p>
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d999.3163726263195!2d30.3221871!3d59.938236!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!3m2!1d59.9387165!2d30.3230474!5e0!3m2!1sru!2sru!4v1557654430223!5m2!1sru!2sru" width="300" height="158"  style="border:0" allowfullscreen></iframe> -->
           <a href="#"><img src="img/map.jpg" width="300" height="158" alt="карта"></a>
           <a class="main-info-link write_us-link" href="write_us.html">Заблудились? Напишите нам!</a>
