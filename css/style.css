@@ -12,7 +12,7 @@ body {
 }
 
 
-
+/*
 body > * {
   background: rgba(255, 0, 0, 0.3);
 }
@@ -27,6 +27,10 @@ body > * > * > * {
 
 body > * > * > * > * {
   background: rgba(0, 255, 255, 0.3);
+}
+
+body > * > * > * > * > * {
+  background: rgba(0, 0, 255, 0.3);
 }
 
 /*!!!!!!!!!header-up!!!!!!!!!!!!*/
@@ -175,30 +179,37 @@ a {
 
 }
 
-.user_authorization {
+.user_block {
   width: 300px;
   height: 50px;
   margin: 0;
   padding: 0;
 }
 
-.user_authorization a {
+.user_block a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.header-login:hover,
-.header-login:focus,
-.header-registration:hover,
-.header-registration:focus {
+.login:hover,
+.login:focus,
+.registration:hover,
+.registration:focus {
   color: #ee3643;
   background-color: #ffffff;
 }
 
-.header-login:active,
-.header-registration:active {
+.inner-page .login:hover,
+.inner-page .login:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.login:active,
+.inner-page .login:active,
+.registration:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
 }
@@ -211,22 +222,12 @@ a {
   text-decoration: underline;
 }
 
-a.login {
+.user_block-wrapper a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
-}
-
-.login:active {
-  color: rgba(0, 0, 0, 0.3);
-  background-color: #ffffff;
-}
-
-.login:hover,
-.login:focus {
-
 }
 
 .my_orders:hover,
@@ -524,9 +525,11 @@ legend {
 /*!!!!!!!!!!!!!!!!!!!!!!footer!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 18px;
   color: #ffffff;
-  background-color: #32425c;
   text-align: left;
 }
 
@@ -536,6 +539,49 @@ legend {
 
 .page-footer li{
   list-style: none;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #32425c;
+}
+
+.footer-up-wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 960px;
+  height: 193px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.footer-contacts-block {
+  width: 330px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+  margin-left: 3px;
+}
+
+.footer-navigation-site {
+  width: 550px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 38px;
+}
+
+.footer-navigation-other {
+  width: 550px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 39px;
 }
 
 .footer-navigation-other a,
@@ -558,15 +604,50 @@ legend {
   background-color: #32425c;
 }
 
+
+/*!!!!!!!!!FOOTER_DOWN!!!!!!!!!!!*/
+
+
 .footer-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
+  width: 100%;
 }
 
-.footer-contacts-item {
-  font-style: normal;
+.footer-down-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 107px;
+}
+
+.copyright {
+  width: 230px;
+  height: 35px;
+  margin-top: 19px;
+}
+
+.footer-social-links {
+  width: 135px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-feedback {
+  width: 300px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-feedback a:hover,
