@@ -467,7 +467,7 @@ a {
   box-sizing: border-box;
   width: 220px;
   height: 145px;
-  border: 1px solid #eaeaea;
+  outline: 1px solid #eaeaea;
   background-color: #ffffff;
   line-height: middle;
   text-align: center;
@@ -558,7 +558,7 @@ a {
 }
 
 .service-slide p {
-  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -585,8 +585,8 @@ a {
 }
 
 .information p {
-  font-family: 'PT Sans Narrow', Arial, sans-serif;
-    font-weight: 700;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: 400;
   margin-top: 0;
   padding: 0;
   line-height: ;
@@ -648,7 +648,7 @@ a {
 /*!!!!!!!!!!!!!!!!catalog-page!!!!!!!!!!!!!!!!!!!!!*/
 
 .catalog-page {
-  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -698,6 +698,7 @@ a {
   color: #32425c;
   background-color: #f2f6f8;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .catalog-container {
@@ -729,6 +730,11 @@ legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
 }
 
 .filter-checkbox-label,
@@ -800,6 +806,7 @@ legend {
 }
 
 .description-wrapper p {
+  font-family: 'PT Sans', sans-serif;
   line-height: 24px;
   text-transform: none;
   margin: 0 auto;
@@ -808,7 +815,7 @@ legend {
 /*!!!!!!CATALOG!!!!!!*/
 
 .catalog-page .catalog {
-  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -827,18 +834,20 @@ legend {
   flex-wrap: wrap;
   width: 700px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .catalog-item {
-  width: 218px;
-  height: 316px;
+  box-sizing: border-box;
+  width: 220px;
+  height: 318px;
   margin: 0;
   padding: 0;
   text-align: center;
-  border: 1px solid #e5e5e5;
+  outline: 1px solid #e5e5e5;
   background-color: #ffffff;
   font-style: normal;
+  padding-top: 10px;
 }
 
 .inner-page .catalog-item {
@@ -866,7 +875,7 @@ legend {
 }
 
 .catalog-item:hover .catalog-item-active {
-   opacity: 1;
+  opacity: 1;
 }
 
 .catalog-item:hover .catalog-item-image {
@@ -881,12 +890,15 @@ legend {
 }
 
 .catalog-item .item-title {
-  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 218px;
 }
 
 .catalog-category {
@@ -898,7 +910,9 @@ legend {
 }
 
 .catalog-item-image {
-
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -978,6 +992,7 @@ legend {
 
 .page-footer li{
   list-style: none;
+
 }
 
 .footer-up {
@@ -1110,4 +1125,4 @@ legend {
 
 
 
-/*  font-family: 'PT Sans Narrow', Arial, sans-serif;*/
+/*  font-family: 'PT Sans', Arial, sans-serif;*/
