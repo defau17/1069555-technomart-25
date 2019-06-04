@@ -180,7 +180,7 @@ img {
   font-style: italic;
   color: #ee3643;
   background-color: #f4f7f9;
-  width: 210px;
+  width: 200px;
   height: 65px;
   margin: 0;
   padding: 0;
@@ -629,6 +629,10 @@ img {
   margin-bottom: 23px;
 }
 
+.main-info-p2 {
+  width: 386px;
+}
+
 .main-contacts {
   width: 300px;
 }
@@ -669,6 +673,7 @@ img {
 }
 
 .main-contacts p {
+  width: 179px;
   margin-bottom: 32px;
 }
 
@@ -1141,7 +1146,11 @@ fieldset {
 }
 
 .footer-feedback-mail {
+  width: 135px;
+}
 
+.footer-feedback-site {
+  width: 96px;
 }
 
 .footer-feedback a:hover,
