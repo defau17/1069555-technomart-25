@@ -68,26 +68,24 @@
             <a href="#">Для стройки</a>
           </div>
           <div class="slider">
-            <ul class="slider-btn visually-hidden">
-              <li>
-                <label>
-                  <input  class="visually-hidden" type="radio" id="slide-btn-1" name="slide-btn" checked>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input  class="visually-hidden" type="radio" id="slide-btn-2" name="slide-btn">
-                </label>
-              </li>
-            </ul>
-            <div class="slide1">
-              <div class="visually-hidden">
-                <b>Дрели</b>
+            <input class="visually-hidden" type="radio" id="slide_1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="slide_2" name="toggle">
+            <div class="slider-control">
+              <label class="slider-control-item slider-control_1" for="slide_1">первый</label>
+              <label class="slider-control-item slider-control_2" for="slide_2">второй</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
                 <a href="catalog.html">Открыть каталог</a>
-              </div>
-              <img src="img/slide-1.jpg" width="620" height="266" alt="фото твоего соседа с нижнего этажа">
-            </div>
+              </li>
+              <li class="slider-item">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
           </div>
           <div class="offers-wrapper">
             <div class="offers-item">
