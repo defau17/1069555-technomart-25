@@ -16,7 +16,9 @@
             <img src="img/logo-rast.png" width="220" height="47" alt="Логотип магазина «Техномарт»">
           </a>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" id="search-field" placeholder="Поиск:" class="search">
+            <label class="search-label" for="search-field">
+              <input type="search" name="search" id="search-field" placeholder="Поиск:" class="search">
+            </label>
           </form>
           <div class="header-up-orders">
             <a class="bookmark" href="#">Закладки: 0</a>
@@ -56,10 +58,16 @@
     <main class="catalog-page">
       <div class="catalog-page-wrapper container">
         <ul class="breadcrumbs ">
-          <li><a href="index.html">Домой</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li class="breadcrumbs-current">Перфораторы</li>
+          <li>
+            <a href="index.html"><span class="visually-hidden">Домой</span></a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Инструмент</a>
+          </li>
+          <li class="breadcrumbs-current"><a>Перфораторы</a></li>
         </ul>
         <h1 class="catalog-title">Перфораторы</h1>
         <div class="catalog-container">
@@ -137,11 +145,13 @@
                 <li>
                   <a href="#">По функционалу</a>
                 </li>
+              </ul>
+              <ul class="sorting-link up-down">
                 <li>
-                  <img src="img/icon-up-dir.svg" alt="По возростанию">
+                  <a href="#"><span class="visually-hidden">По возростанию</span></a>
                 </li>
                 <li>
-                  <img src="img/icon-down-dir.svg" alt="По убыванию">
+                  <a href="#"><span class="visually-hidden">По убыванию</span></a>
                 </li>
               </ul>
             </section>
@@ -178,6 +188,7 @@
                 </li>
                 <!--позиция 3-->
                 <li class="catalog-item">
+                  <div class="flag flag-new">новинка</div>
                   <div class="image-wrapper">
                     <img class="catalog-item-image" src="img/item-bfg_2000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 2000">
                     <ul class="catalog-item-active">
@@ -204,6 +215,7 @@
                 </li>
                 <!--позиция 5-->
                 <li class="catalog-item">
+                  <div class="flag flag-new">новинка</div>
                   <div class="image-wrapper">
                     <img class="catalog-item-image" src="img/item-bfg_6000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 6000">
                     <ul class="catalog-item-active">
@@ -230,6 +242,7 @@
                 </li>
                 <!--позиция 7-->
                 <li class="catalog-item">
+                  <div class="flag flag-new">новинка</div>
                   <div class="image-wrapper">
                     <img class="catalog-item-image" src="img/item-bfg_3000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 3000">
                     <ul class="catalog-item-active">
@@ -273,7 +286,7 @@
               <li class="pagination-item pagination-item-current"><a>1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
-              <li class="pagination-item"><a href="#">следующая</a></li>
+              <li class="pagination-item pagination-item-advance"><a href="#">следующая</a></li>
             </ul>
           </div>
         </div>
@@ -281,8 +294,7 @@
       <article class="description">
         <div class="description-wrapper container">
           <h2>Пара слов о перфораторах</h2>
-          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
-          <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
       </article>
     </main>
@@ -320,27 +332,31 @@
         <div class="footer-down-wrapper  container">
           <p  class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
           <ul class="footer-social-links">
-            <li><a class="social-links_link" href="#">Вконтакте</a></li>
-            <li><a class="social-links_link" href="#">Фейсбук</a></li>
-            <li><a class="social-links_link" href="#">Инстаграм</a></li>
+            <li><a class="social-links_link" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-links_link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-links_link" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
           <ul class="footer-feedback">
             <li class="footer-feedback-mail">Обратная связь:
               <a class="btn-feedback-mail"   href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
-            <li class="footer-feedback-site">Разработано-
-              <a class="btn-feedback-site" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <li class="footer-feedback-site">Разработано —
+              <a class="btn-feedback-site" href="https://up.htmlacademy.ru/htmlcss/25">htmlacademy.ru</a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
 
-    <section class="visually-hidden modal-check">
-      <button class="modal-check-close" type="button" name="button">Закрыть</button>
-      <h2>Товар добавлен в корзину!</h2>
-      <a href="#">Оформить заказ</a>
-      <button class="modal-check-close-other" type="button" name="button">Продолжить покупки</button>
+    <section class=" modal-check">
+      <div class="modal-check-up">
+        <button class="modal-check-close" type="button" name="button">Закрыть</button>
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="modal-check-down">
+        <a href="#">Оформить заказ</a>
+        <button class="modal-check-close-other" type="button" name="button">Продолжить покупки</button>
+      </div>
     </section>
   </body>
 </html>

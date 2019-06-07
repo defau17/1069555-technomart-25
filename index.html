@@ -16,7 +16,9 @@
             <img src="img/logo-rast.png" width="220" height="47" alt="Логотип магазина «Техномарт»">
           </a>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" id="search-field" placeholder="Поиск:" class="search">
+            <label class="search-label" for="search-field">
+              <input type="search" name="search" id="search-field" placeholder="Поиск:" class="search">
+            </label>
           </form>
           <div class="header-up-orders">
             <a class="bookmark" href="#">Закладки: 0</a>
@@ -56,6 +58,7 @@
       <div class="main-top container">
         <div class="main-offers">
           <div class="offers-item">
+            <div class="flag flag-new">новинка</div>
             <h2>Материалы</h2>
             <a href="#">На любой вкус</a>
           </div>
@@ -68,11 +71,15 @@
             <a href="#">Для стройки</a>
           </div>
           <div class="slider">
-            <input class="visually-hidden" type="radio" id="slide_1" name="toggle" checked>
-            <input class="visually-hidden" type="radio" id="slide_2" name="toggle">
+            <input class="slider-bottom visually-hidden" type="radio" id="slide_1" name="toggle" checked>
+            <input class="slider-bottom visually-hidden" type="radio" id="slide_2" name="toggle">
             <div class="slider-control">
               <label class="slider-control-item slider-control_1" for="slide_1">первый</label>
               <label class="slider-control-item slider-control_2" for="slide_2">второй</label>
+            </div>
+            <div class="slider-indicator">
+              <label class="slider-indicator-item1" for="slide_1"></label>
+              <label class="slider-indicator-item2" for="slide_2"></label>
             </div>
             <ul class="slider-list">
               <li class="slider-item">
@@ -146,6 +153,7 @@
           </li>
           <!-- 4 -->
           <li class="catalog-item top_prod">
+            <div class="flag flag-new">новинка</div>
             <div class="image-wrapper">
               <img class="catalog-item-image" src="img/item-bfg_2000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 2000">
               <ul class="catalog-item-active">
@@ -223,34 +231,40 @@
             <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <div class="service-active-wrapper">
+            <input class="service-bottom visually-hidden" type="radio" name="service-btn" id="btn-delivery" checked>
+            <input  class="service-bottom visually-hidden" type="radio" name="service-btn" id="btn-safeguard">
+            <input class="service-bottom visually-hidden" type="radio" name="service-btn" id="btn-credit">
             <div class="service-btn">
-              <label for="btn-delivery">
-                <input class="service-btn visually-hidden" type="radio" name="btn-delivery" id="btn-delivery">Доставка
+              <label class="service-btn-item" for="btn-delivery">
+                Доставка
               </label>
-              <label for="btn-safeguard">
-                <input  class="visually-hidden" type="radio" name="btn-safeguard" id="btn-safeguard">Гарантия
+              <label class="service-btn-item" for="btn-safeguard">
+                Гарантия
               </label>
-              <label for="btn-credit">
-                <input class="visually-hidden" type="radio" name="btn-credit" id="btn-credit">Кредит
+              <label class="service-btn-item" for="btn-credit">
+                Кредит
               </label>
             </div>
-            <section class="service-slide delivery">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-              <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-            </section>
-            <section class="service-slide warranty visually-hidden">
-              <h3>Гарантия</h3>
-              <p>
-                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-              </p>
-            </section>
-            <section class="service-slide credit visually-hidden">
-              <h3>Кредит</h3>
-              <p>
-                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-              </p>
-            </section>
+            <ul class="service-slider-list">
+              <li class="service-slide-item delivery">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!</p>
+                <p>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+              </li>
+              <li class="service-slide-item warranty">
+                <h3>Гарантия</h3>
+                <p>
+                  Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="service-slide-item credit">
+                <h3>Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.
+                </p>
+                <a href="#">Отправить заявку</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -310,16 +324,16 @@
         <div class="footer-down-wrapper  container">
           <p  class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
           <ul class="footer-social-links">
-            <li><a class="social-links_link" href="#">Вконтакте</a></li>
-            <li><a class="social-links_link" href="#">Фейсбук</a></li>
-            <li><a class="social-links_link" href="#">Инстаграм</a></li>
+            <li><a class="social-links_link" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-links_link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-links_link" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
           <ul class="footer-feedback">
             <li class="footer-feedback-mail">Обратная связь:
               <a class="btn-feedback-mail"   href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
-            <li class="footer-feedback-site">Разработано-
-              <a class="btn-feedback-site" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <li class="footer-feedback-site">Разработано —
+              <a class="btn-feedback-site" href="https://up.htmlacademy.ru/htmlcss/25">htmlacademy.ru</a>
             </li>
           </ul>
         </div>
