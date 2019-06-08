@@ -99,7 +99,7 @@ input[type="radio"].visually-hidden {
   background-color: #293449;
   border: none;
   padding: 12px 12px 12px 49px;
-  padding-bottom: ;
+
 }
 
 .search-label {
@@ -202,7 +202,6 @@ input[type="radio"].visually-hidden {
 .bookmark:focus,
 .cart:hover,
 .cart:focus {
-  color: ;
   background-color: #212a3a;
 }
 
@@ -1201,7 +1200,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   margin-top: 0;
   padding: 0;
-  line-height: ;
 }
 
 .main-info {
@@ -2518,12 +2516,10 @@ box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 
 .modal-check:target {
 	display: flex;
-	pointer-events: auto;
 }
 
 .modal-check-up {
  text-align: center;
-
 }
 
 .modal-check h2 {
