@@ -1120,11 +1120,23 @@ input[type="radio"].visually-hidden {
 }
 
 .service-btn {
+  position: relative;
   width: 245px;
   background-color: #f4f7f9;
   font-size: 30px;
   color: #32425c;
   margin-right: 74px;
+}
+
+.service-btn::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: 4px;
+  width: 10px;
+  height: 279px;
+  background-image: url('../img/shadow.png');
+
 }
 
 .service-btn-item {
