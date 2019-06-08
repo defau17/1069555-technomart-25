@@ -37,6 +37,7 @@
           <div class="user_block-wrapper">
             <ul class="user_block">
               <li><a class="login user" href="#">Равшан Джамшутович</a></li>
+              <li class="logout"><a href="#"></a></li>
             </ul>
             <a class="my_orders user_block-link" href="#">Мои заказы</a>
             <a class="personal_area user_block-link" href="#">Личный кабинет</a>
@@ -117,20 +118,16 @@
                     <legend>Питание:</legend>
                     <ul class="filter-power-list">
                       <li>
-                        <label class="filter-radio-label">
-                          <input class="visually-hidden filter-radio" type="radio" name="btn-power" value="wireless" checked>
-                            Аккумуляторные
-                        </label>
+                        <input class="visually-hidden filter-radio" type="radio" name="btn-power" value="battery" id="battery" checked>
+                        <label class="filter-radio-label" for="battery">Аккумуляторные</label>
                       </li>
                       <li>
-                        <label class="filter-radio-label">
-                          <input class="visually-hidden filter-radio" type="radio" name="btn-power" value="wired">
-                          Сетевые
-                        </label>
+                        <input class="visually-hidden filter-radio" type="radio" name="btn-power" value="cable" id="cable">
+                        <label class="filter-radio-label" for="cable">Сетевые</label>
                       </li>
                     </ul>
                   </fieldset>
-                <input type="submit" value="Показать">
+                <input class="filter-submit" type="submit" value="Показать">
               </form>
             </div>
           </section>
