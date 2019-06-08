@@ -1911,6 +1911,7 @@ input[type="submit"] {
   padding-bottom: 10px;
   padding-left: 6px;
   margin-bottom: 7px;
+  box-shadow: inset 0px -3px 0 0 #367315;
 }
 
 .btn-buy:hover,
