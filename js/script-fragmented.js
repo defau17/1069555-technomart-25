@@ -1,9 +1,9 @@
-var link = document.querySelector(".write_us-link");
+var link = document.querySelector(".write-us-link");
 
-var popup = document.querySelector(".modal-write_us");
-var close = popup.querySelector(".modal-write_us-close");
+var popup = document.querySelector(".modal-write-us");
+var close = popup.querySelector(".modal-write-us-close");
 
-var form = popup.querySelector(".write_us-form");
+var form = popup.querySelector(".write-us-form");
 var userName = popup.querySelector("[name=user-name]");
 var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text]");
