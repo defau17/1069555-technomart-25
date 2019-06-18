@@ -3,7 +3,7 @@ var link = document.querySelector(".write-us-link");
 var popup = document.querySelector(".modal-write-us");
 var close = popup.querySelector(".modal-write-us-close");
 
-var form = popup.querySelector(".write-us-form");
+var form = popup.querySelector("form");
 var userName = popup.querySelector("[name=user-name]");
 var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text]");
@@ -27,7 +27,6 @@ link.addEventListener("click", function (evt) {
   } else {
     userName.focus();
   }
-
 });
 
 close.addEventListener("click", function (evt) {
@@ -37,7 +36,6 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  evt.preventDefault();
   if (!userName.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
