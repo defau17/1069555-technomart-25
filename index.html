@@ -5,7 +5,7 @@
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-prefix.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="index">
     <header class="page-header">
@@ -15,7 +15,7 @@
             <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина «Техномарт»">
           </a>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <label class="search-label" for="search-field">
+            <label class="search-label" for="search-field"><span class="visually-hidden">Поиск</span>
               <input type="search" name="search" id="search-field" placeholder="Поиск:" class="search">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                   <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
@@ -79,11 +79,13 @@
             <a href="#">Для стройки</a>
           </div>
           <div class="slider">
-            <input class="slider-bottom vis-hid" type="radio" id="slide-1" name="toggle" checked>
-            <input class="slider-bottom vis-hid" type="radio" id="slide-2" name="toggle">
+            <input class="slider-button vis-hid" type="radio" id="slide-1" name="toggle" checked>
+            <input class="slider-button vis-hid" type="radio" id="slide-2" name="toggle">
             <div class="slider-control">
-              <label class="slider-control-item slider-control-1" for="slide-1">Первый</label>
-              <label class="slider-control-item slider-control-2" for="slide-2">Второй</label>
+              <!-- <label class="slider-control-1" for="slide-1">Первый</label>
+              <label class="slider-control-2" for="slide-2">Второй</label> -->
+              <button class="slider-control-1" type="button" name="button"></button>
+              <button class="slider-control-2" type="button" name="button"></button>
             </div>
             <div class="slider-indicator">
               <label class="slider-indicator-item1" for="slide-1"></label>
@@ -123,11 +125,11 @@
           <!-- 1 -->
           <li class="catalog-item top-prod">
             <div class="image-wrapper">
-              <img class="catalog-item-image" src="img/item-bfg-9000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 9000">
               <ul class="catalog-item-active">
                 <li><a class="btn-buy" href="#">Купить</a></li>
                 <li><a class="btn-add-to-bookmark" href="#">В закладки</a></li>
               </ul>
+              <img class="catalog-item-image" src="img/item-bfg-9000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 9000">
             </div>
             <h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
             <p class="old-price"><del>32500 р.</del></p>
@@ -136,11 +138,11 @@
           <!-- 2 -->
           <li class="catalog-item top-prod">
             <div class="image-wrapper">
-              <img class="catalog-item-image" src="img/item-bfg-3000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 3000">
               <ul class="catalog-item-active">
                 <li><a class="btn-buy" href="#">Купить</a></li>
                 <li><a class="btn-add-to-bookmark" href="#">В закладки</a></li>
               </ul>
+              <img class="catalog-item-image" src="img/item-bfg-3000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 3000">
             </div>
             <h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
             <p class="old-price"><del>22500 р.</del></p>
@@ -149,11 +151,11 @@
           <!-- 3 -->
           <li class="catalog-item top-prod">
             <div class="image-wrapper">
-              <img class="catalog-item-image" src="img/item-bfg-6000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 6000">
               <ul class="catalog-item-active">
                 <li><a class="btn-buy" href="#">Купить</a></li>
                 <li><a class="btn-add-to-bookmark" href="#">В закладки</a></li>
               </ul>
+              <img class="catalog-item-image" src="img/item-bfg-6000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 6000">
             </div>
             <h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
             <p class="old-price"><del>30500 р.</del></p>
@@ -163,11 +165,11 @@
           <li class="catalog-item top-prod">
             <div class="flag flag-new">Новинка</div>
             <div class="image-wrapper">
-              <img class="catalog-item-image" src="img/item-bfg-2000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 2000">
               <ul class="catalog-item-active">
                 <li><a class="btn-buy" href="#">Купить</a></li>
                 <li><a class="btn-add-to-bookmark" href="#">В закладки</a></li>
               </ul>
+              <img class="catalog-item-image" src="img/item-bfg-2000.jpg" width="218" height="170" alt="Картинка перфоратора BOSCH BFG 2000">
             </div>
             <h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
             <p class="old-price no-old-price"><del>0</del></p>
@@ -239,11 +241,11 @@
             <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <div class="service-active-wrapper">
-            <input class="service-bottom visually-hidden" type="radio" name="service-btn" id="btn-delivery" checked>
-            <input class="service-bottom visually-hidden" type="radio" name="service-btn" id="btn-safeguard">
-            <input class="service-bottom visually-hidden" type="radio" name="service-btn" id="btn-credit">
+            <!-- <input class="service-button visually-hidden" type="radio" name="service-btn" id="btn-delivery" checked>
+            <input class="service-button visually-hidden" type="radio" name="service-btn" id="btn-safeguard">
+            <input class="service-button visually-hidden" type="radio" name="service-btn" id="btn-credit"> -->
             <div class="service-btn">
-              <label class="service-btn-item" for="btn-delivery">
+              <!-- <label class="service-btn-item" for="btn-delivery">
                 Доставка
               </label>
               <label class="service-btn-item" for="btn-safeguard">
@@ -251,8 +253,12 @@
               </label>
               <label class="service-btn-item" for="btn-credit">
                 Кредит
-              </label>
+              </label> -->
+              <button class="service-btn-item service-btn-item-current" type="button" name="service-btn">Доставка</button>
+              <button class="service-btn-item" type="button" name="service-btn">Гарантия</button>
+              <button class="service-btn-item" type="button" name="service-btn">Кредит</button>
             </div>
+
             <ul class="service-slider-list">
               <li class="service-slide-item delivery">
                 <h3>Доставка</h3>
@@ -391,6 +397,6 @@
       </form>
     </section>
 
-    <script src="js/script-fragmented.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
